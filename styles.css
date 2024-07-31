@@ -1,0 +1,145 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(135deg, #333, #666); 
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    position: relative;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em; 
+    transition: color 0.3s ease; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2em; 
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #908f8e; 
+    transform: scale(1.1); 
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background: #5c5a5a; 
+    transition: width 0.3s ease; 
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+nav ul li a:hover::after {
+    width: 100%; 
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+#about {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+#skills ul li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: inline-block;
+    margin: 5px;
+    padding: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#skills ul li:hover {
+    background-color: #e0e0e0; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly enlarge the element */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+#projects .project {
+    background-color: #f9f9f9; /* Light background color */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+#projects .project:hover {
+    transform: scale(1.03); /* Slightly enlarge the element */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+.project h3 {
+    margin-top: 0; /* Remove top margin */
+}
+
+#contact a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease
+}
+
+#about:hover {
+    background-color: #e8f4f8; /* Light blue background for About section */
+}
+
+#skills:hover {
+    background-color: #f4f8e8; /* Light green background for Skills section */
+}
+
+#projects:hover {
+    background-color: #fef8e8; /* Light yellow background for Projects section */
+}
+
+#contact:hover {
+    background-color: #e8e8f4; /* Light purple background for Contact section */
+}
+
+#contact a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
